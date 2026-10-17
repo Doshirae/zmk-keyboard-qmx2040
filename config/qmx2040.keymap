@@ -203,7 +203,7 @@
   };*/
 
   combos {
-    compatible = "zmk, combos";
+    compatible = "zmk,combos";
     combo_esc {
       timeout-ms = <30>;
       layers = <L_BASE>;
