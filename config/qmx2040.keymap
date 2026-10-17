@@ -47,8 +47,8 @@
 #define RHRM_RIGHT &hrm LALT RIGHT
 
 
-#define MY_MUTE           &kp LC(LS(F16))
-#define MY_SCREEN_SHARE   &kp LC(LS(F15))
+#define MY_MUTE      &kp LC(LS(F16))
+#define MY_SCRNSHR   &kp LC(LS(F15))
 
 
 
@@ -219,9 +219,9 @@
     base_layer: base_layer {
       display-name = "Base";
       bindings = <
-        &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ESC       &trans     &kp N6 &kp N7 &kp N8    &kp N9  &kp N0   &kp C_PREV &kp C_VOL_UP
-        &kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T  &trans        &trans     &kp Y  &kp U  &kp I     &kp O   &kp P    &kp C_NEXT &kp C_VOL_DN
-        &trans    HRM_A  HRM_S  HRM_D  HRM_F  &kp G  &to L_DOFUS   &to L_GAME &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI &kp C_PP   &kp C_MUTE
+        &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ESC       MY_SCRNSHR &kp N6 &kp N7 &kp N8    &kp N9  &kp N0     &kp C_PP     &kp PSCRN
+        &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T  &trans        &trans     &kp Y  &kp U  &kp I     &kp O   &kp P      &kp C_PREV   &kp C_NEXT
+        &trans    HRM_A  HRM_S  HRM_D  HRM_F  &kp G  &to L_DOFUS   &to L_GAME &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI   &kp C_VOL_UP &kp C_VOL_DN
                   &kp Z  &kp X  &kp C  &kp V  &kp B                           &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
                          MY_MUTE &trans TK_SFT TK_SPC TK_TAB      TK_ENT TK_BSPC TK_RALT &trans &trans
 	      /* &mo LAYER_TT  &mo LAYER_HRM  &mo LAYER_NO_STICKY  &mac_dip  &mo LAYER_CUSTOM_1 */
@@ -236,8 +236,8 @@
       display-name = "Gaming";
       bindings = <
         &kp ESC   &trans &trans &trans &trans &trans &kp ESC      &trans     &trans &trans &trans &trans &trans    &trans &trans
-        &kp TAB  &trans &trans &trans &trans &trans &trans       &trans     &trans &trans &trans &trans &trans    &trans &trans
-        &kp LCTL &kp A  &kp S  &kp D  &kp F  &trans &trans       &to L_BASE &trans &kp J  &kp K  &kp L  &kp SEMI  &trans &trans
+        &kp TAB  &trans &trans &trans &trans &trans &trans        &trans     &trans &trans &trans &trans &trans    &trans &trans
+        &kp LCTL &kp A  &kp S  &kp D  &kp F  &trans &trans        &to L_BASE &trans &kp J  &kp K  &kp L  &kp SEMI  &trans &trans
                   &trans &trans &trans &trans &trans                         &trans &trans &trans &trans &trans
                MY_MUTE &kp L  &kp LALT &kp SPC TK_ENT                     &kp ENTER &kp BSPC &trans &trans &trans
           &trans  &trans  &trans  &trans  &trans
