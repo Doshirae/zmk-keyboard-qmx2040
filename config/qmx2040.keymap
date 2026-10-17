@@ -221,7 +221,7 @@
       bindings = <
         &kp ESC   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp ESC       MY_SCRNSHR &kp N6 &kp N7 &kp N8    &kp N9  &kp N0     &kp C_PP     &kp PSCRN
         &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T  &trans        &trans     &kp Y  &kp U  &kp I     &kp O   &kp P      &kp C_PREV   &kp C_NEXT
-        &trans    HRM_A  HRM_S  HRM_D  HRM_F  &kp G  &to L_DOFUS   &to L_GAME &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI   &kp C_VOL_UP &kp C_VOL_DN
+        &trans    HRM_A  HRM_S  HRM_D  HRM_F  &kp G  &to L_DOFUS   &to L_GAME &kp H  HRM_J  HRM_K     HRM_L   HRM_SEMI   &kp C_VOL_DN &kp C_VOL_UP
                   &kp Z  &kp X  &kp C  &kp V  &kp B                           &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH
                          MY_MUTE &trans TK_SFT TK_SPC TK_TAB      TK_ENT TK_BSPC TK_RALT &trans &trans
 	      /* &mo LAYER_TT  &mo LAYER_HRM  &mo LAYER_NO_STICKY  &mac_dip  &mo LAYER_CUSTOM_1 */
