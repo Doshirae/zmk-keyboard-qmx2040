@@ -48,7 +48,7 @@
 
 
 #define MY_MUTE      &kp LC(LS(F16))
-#define MY_SCRNSHR   &kp LC(LS(F15))
+#define MY_SCRNSHR   &kp LC(LS(F17))
 
 
 
