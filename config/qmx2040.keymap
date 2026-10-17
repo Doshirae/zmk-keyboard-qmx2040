@@ -58,8 +58,8 @@
 #define RHRM_RIGHT &hrm LALT RIGHT
 
 
-#define MY_MUTE           &kp LCTL(LSFT(F16))
-#define MY_SCREEN_SHARE   &kp LCTL(LSFT(F15))
+#define MY_MUTE           &kp LC(LS(F16))
+#define MY_SCREEN_SHARE   &kp LC(LS(F15))
 
 
 
