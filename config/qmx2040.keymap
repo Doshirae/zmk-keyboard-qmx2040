@@ -207,7 +207,7 @@
     combo_esc {
       timeout-ms = <30>;
       layers = <L_BASE>;
-      key-positions = <40 41>;
+      key-positions = <39 40>;
       layers = <L_BASE>;
       bindings = <&kp ESC>;
     };
