@@ -237,11 +237,11 @@
     layer_nav: layer_nav {
       display-name = "Navigation";
       bindings = <
-        &trans &kp F1    &kp F2    &kp F3    &kp F4     &kp F5  &trans     &trans &kp F6  &kp F7    &kp F8    &kp F9     &kp F10   &kp F11 &kp F12
-        &trans &trans    &kp HOME  &kp UP    &kp END    &kp RET &trans     &trans &trans  &kp HOME  &kp UP    &kp END    &trans    &trans  &trans
-        &trans &kp LGUI  LHRM_LEFT LHRM_DOWN LHRM_RIGHT &kp SPC &trans     &trans &trans  RHRM_LEFT RHRM_DOWN RHRM_RIGHT &kp RGUI  &trans  &trans
-               &trans    &trans    &trans    &trans     &kp BSPC                  &trans  &trans    &trans    &trans     &trans
-                         &trans    &trans    &trans     &kp DEL &trans     &trans &kp DEL &trans &trans &trans
+        &trans         &kp F1    &kp F2    &kp F3    &kp F4     &kp F5  &trans     &trans &kp F6  &kp F7    &kp F8    &kp F9     &kp F10   &kp F11 &kp F12
+        &studio_unlock &trans    &kp HOME  &kp UP    &kp END    &kp RET &trans     &trans &trans  &kp HOME  &kp UP    &kp END    &trans    &trans  &trans
+        &trans         &kp LGUI  LHRM_LEFT LHRM_DOWN LHRM_RIGHT &kp SPC &trans     &trans &trans  RHRM_LEFT RHRM_DOWN RHRM_RIGHT &kp RGUI  &trans  &trans
+                       &trans    &trans    &trans    &trans     &kp BSPC                  &trans  &trans    &trans    &trans     &trans
+                       &trans    &trans    &trans     &kp DEL &trans     &trans &kp DEL &trans &trans &trans
           &trans  &trans  &trans  &trans  &trans
       >;
     };
