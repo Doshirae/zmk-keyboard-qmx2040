@@ -138,7 +138,7 @@
     tt_thumb: tt_thumb {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings  = <&sc LAYER_NAV BSPC>, <&lt LAYER_NAV SPC>;
+      bindings  = <&sc L_NAV BSPC>, <&lt L_NAV SPC>;
       mods      = <MOD_RALT>;
       keep-mods = <MOD_RALT>;
     };
@@ -193,13 +193,14 @@
     };
   };
 
+  /*
   conditional_layers {
     compatible = "zmk,conditional-layers";
     nav_tt {
       if-layers = <LAYER_TT LAYER_NAV>;
       then-layer = <LAYER_NAV_TT>;
     };
-  };
+  };*/
 
   keymap {
     compatible = "zmk,keymap";
