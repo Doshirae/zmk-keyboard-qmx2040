@@ -235,11 +235,11 @@
     layer_gaming: layer_gaming {
       display-name = "Gaming";
       bindings = <
-        &kp ESC   &trans  &trans  &trans &trans   &trans  &trans        &trans     &trans    &trans &trans &trans &trans    &trans &trans
+        &kp ESC   &trans  &trans  &trans &trans   &trans  &kp L         &trans     &trans    &trans &trans &trans &trans    &trans &trans
         &kp TAB   &trans  &trans  &trans &trans   &trans  &trans        &trans     &trans    &trans &trans &trans &trans    &trans &trans
         &kp LSHFT &kp A   &kp S   &kp D  &kp F    &trans  &kp H         &to L_BASE &trans    &kp J  &kp K  &kp L  &kp SEMI  &trans &trans
                   &trans  &trans  &trans &trans   &trans                           &trans    &trans &trans &trans &trans
-                          MY_MUTE &kp L  &kp LALT &kp SPC TK_ENT        &kp ENTER  &kp BSPC  &trans &trans &trans
+                          MY_MUTE &kp LCTL &kp LALT &kp SPC TK_ENT        &kp ENTER  &kp BSPC  &trans &trans &trans
           &trans  &trans  &trans  &trans  &trans
       >;
     };
