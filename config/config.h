@@ -13,12 +13,12 @@
 
 // Thumb keys
 #define TK_SFT &bsk_shift 
-#define TK_SPC &lt L_NAV SPC
-#define TK_TAB &lt L_NUM TAB
+#define TK_SPC &sc L_NAV SPC
+#define TK_TAB &sc L_NUM TAB
 
 #define TK_RALT &EZ_SK(RALT)
-#define TK_BSPC &lt L_NAV BSPC
-#define TK_ENT  &lt L_NUM ENTER
+#define TK_BSPC &sc L_NAV BSPC
+#define TK_ENT  &sc L_NUM ENTER
 
 // HRM Shorthands
 #define HRM_A &hrm LGUI A
@@ -45,16 +45,4 @@
 #define MY_SCRNSHR   &kp LC(LS(F17))
 
 
-
-#define EZ_SL(layer)    bsl   (layer) (layer)
-#define EZ_SLMH(layer)  bslmh (layer) (layer)
 #define EZ_SK(mod)      bsk   (mod) (mod)
-
-#define MAC_MORPH(name, base_binding, mac_binding)            \
-  name: name {                                                \
-    compatible = "zmk,behavior-os-key";                       \
-    #binding-cells = <0>;                                     \
-    /*               Win            Mac             Lin  */   \
-    bindings = <base_binding>, <mac_binding>, <base_binding>; \
-  };
-
