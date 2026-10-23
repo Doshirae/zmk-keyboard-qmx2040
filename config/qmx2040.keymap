@@ -3,66 +3,9 @@
 
 #include <dt-bindings/zmk/oskey.h>
 #include <behaviors/oskey.dtsi>
-
-// Timing is key
-#define TAPPING_TERM       300
-#define SHORT_TAPPING_TERM 150
-#define QUICK_TAP          200
-
-// Human-readable layer indexes
-#define L_BASE          0
-#define L_GAME          1
-#define L_NAV           2
-#define L_NUM           3
-#define L_DOFUS         4
+#include "config.h"
 
 
-// Thumb keys
-#define TK_SFT &bsk_shift 
-#define TK_SPC &lt L_NAV SPC
-#define TK_TAB &lt L_NUM TAB
-
-#define TK_RALT &EZ_SK(RALT)
-#define TK_BSPC &lt L_NAV BSPC
-#define TK_ENT  &lt L_NUM ENTER
-
-// HRM Shorthands
-#define HRM_A &hrm LGUI A
-#define HRM_S &hrm LALT S
-#define HRM_D &hrm LCTL D
-#define HRM_F &hrm LSHFT F
-
-#define HRM_J &hrm LSHFT J
-#define HRM_K &hrm LCTL K
-#define HRM_L &hrm LALT L
-#define HRM_SEMI &hrm LGUI SEMI
-
-
-#define LHRM_LEFT  &hrm LALT LEFT
-#define LHRM_DOWN  &hrm LCTL DOWN
-#define LHRM_RIGHT &hrm LSHFT RIGHT
-
-#define RHRM_LEFT &hrm LSHFT LEFT
-#define RHRM_DOWN &hrm LCTL DOWN
-#define RHRM_RIGHT &hrm LALT RIGHT
-
-
-#define MY_MUTE      &kp LC(LS(F16))
-#define MY_SCRNSHR   &kp LC(LS(F17))
-
-
-
-#define EZ_SL(layer)    bsl   (layer) (layer)
-#define EZ_SLMH(layer)  bslmh (layer) (layer)
-#define EZ_SK(mod)      bsk   (mod) (mod)
-
-#define MAC_MORPH(name, base_binding, mac_binding)            \
-  name: name {                                                \
-    compatible = "zmk,behavior-os-key";                       \
-    #binding-cells = <0>;                                     \
-    /*               Win            Mac             Lin  */   \
-    bindings = <base_binding>, <mac_binding>, <base_binding>; \
-  };
 
 &sl { ignore-modifiers; }; // keep one-shot-mods when chained into a one-shot-layer
 &sk { quick-release; };    // must-have! (lots of false positives otherwise)
@@ -193,14 +136,6 @@
     };
   };
 
-  /*
-  conditional_layers {
-    compatible = "zmk,conditional-layers";
-    nav_tt {
-      if-layers = <LAYER_TT LAYER_NAV>;
-      then-layer = <LAYER_NAV_TT>;
-    };
-  };*/
 
   combos {
     compatible = "zmk,combos";
@@ -212,6 +147,7 @@
       bindings = <&kp ESC>;
     };
   };
+
 
   keymap {
     compatible = "zmk,keymap";
@@ -235,9 +171,9 @@
     layer_gaming: layer_gaming {
       display-name = "Gaming";
       bindings = <
-        &kp ESC   &trans  &trans  &trans &trans   &trans  &kp L         &trans     &trans    &trans &trans &trans &trans    &trans &trans
+        &kp ESC   &trans  &trans  &trans &trans   &trans  &kp H         &trans     &trans    &trans &trans &trans &trans    &trans &trans
         &kp TAB   &trans  &trans  &trans &trans   &trans  &trans        &trans     &trans    &trans &trans &trans &trans    &trans &trans
-        &kp LSHFT &kp A   &kp S   &kp D  &kp F    &trans  &kp H         &to L_BASE &trans    &kp J  &kp K  &kp L  &kp SEMI  &trans &trans
+        &kp LSHFT &kp A   &kp S   &kp D  &kp F    &trans  &kp L         &to L_BASE &trans    &kp J  &kp K  &kp L  &kp SEMI  &trans &trans
                   &trans  &trans  &trans &trans   &trans                           &trans    &trans &trans &trans &trans
                           MY_MUTE &kp LCTL &kp LALT &kp SPC TK_ENT        &kp ENTER  &kp BSPC  &trans &trans &trans
           &trans  &trans  &trans  &trans  &trans
