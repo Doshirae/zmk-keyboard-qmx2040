@@ -13,11 +13,11 @@
 
 // Thumb keys
 #define TK_SFT &bsk_shift 
-#define TK_SPC &sc L_NAV SPC
-#define TK_TAB &sc L_NUM TAB
+#define TK_SPC &lt L_NAV SPC
+#define TK_TAB &lt L_NUM TAB
 
 #define TK_RALT &EZ_SK(RALT)
-#define TK_BSPC &sc L_NAV BSPC
+#define TK_BSPC &lt L_NAV BSPC
 #define TK_ENT  &sc L_NUM ENTER
 
 // HRM Shorthands
