@@ -161,8 +161,8 @@
     layer_dofus: layer_dofus {
       display-name = "Dofus";
       bindings = <
-        &trans   &kp N1  &kp N2 &kp N3 &kp N4    &kp N5    &kp ESC          &trans &trans &trans &trans &trans &trans &trans &trans
-        &kp H    &kp N6  &kp N7 &kp N8 &kp N9    &kp N0    &trans           &trans &trans &trans &trans &trans &trans &trans &trans
+        &trans   &kp N1  &kp N2 &kp N3 &kp N4    &kp N5    &kp BSPC         &trans &trans &trans &trans &trans &trans &trans &trans
+        &kp H    &kp N6  &kp N7 &kp N8 &kp N9    &kp N0    &kp RET          &trans &trans &trans &trans &trans &trans &trans &trans
         &kp LALT &kp A   &kp S  &kp I  &kp MINUS &kp EQUAL &to L_BASE   &to L_BASE &trans &trans &trans &trans &trans &trans &trans
                  &kp Z   &kp X  &kp C  &kp F     &kp U                             &trans &trans &trans &trans &trans
                  MY_MUTE &kp W  &kp Y  &kp LCTL  &kp LSHFT                  &trans &trans &trans &trans &trans
